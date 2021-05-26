@@ -61,5 +61,10 @@ namespace TicTacToe
         {
 
         }
+
+        private void RestartBtn_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
