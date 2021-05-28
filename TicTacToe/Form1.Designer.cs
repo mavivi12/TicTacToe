@@ -215,7 +215,6 @@ namespace TicTacToe
             // NewGameContextMenuStrip
             // 
             this.NewGameContextMenuStrip.Name = "NewGameContextMenuStrip";
-            this.NewGameContextMenuStrip.OwnerItem = this.newGameToolStrip;
             this.NewGameContextMenuStrip.Size = new System.Drawing.Size(61, 4);
             this.NewGameContextMenuStrip.Opening += new System.ComponentModel.CancelEventHandler(this.NewGameContextMenuStrip_Opening);
             // 
