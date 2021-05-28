@@ -30,8 +30,8 @@ namespace TicTacToe
                 b.Text = "O";
 
             playerturn = !playerturn; //change player
-            b.Enabled = false;
-            playerturn_count++;
+            b.Enabled = false; //one click only per button
+            playerturn_count++; //incrementation
 
             WinnerChecker();
         }
@@ -80,13 +80,10 @@ namespace TicTacToe
                 button8.Enabled = false;
                 button9.Enabled = false;
             }
-            else
-            {
-                if (playerturn_count == 9)
+            else if (playerturn_count == 9)
                 {
                     MessageBox.Show("Draw!", "No Winner!");
                 }
-            }
         }//may nanalo na
 
         private void NewGameContextMenuStrip_Opening(object sender, CancelEventArgs e)
@@ -96,7 +93,7 @@ namespace TicTacToe
 
         private void AboutContextMenuStrip_Opening(object sender, CancelEventArgs e)
         {
-            MessageBox.Show("Developed by Marvic Macarubbo (2021).\n Enjoy the Tic-Tac-Toe Game!", "Tic-Tac-Toe About");
+            MessageBox.Show("Developed by Marvic Macarubbo (2021).\nEnjoy the Tic-Tac-Toe Game!", "Tic-Tac-Toe About");
         }
 
         private void ExitContextMenuStrip_Opening(object sender, CancelEventArgs e)

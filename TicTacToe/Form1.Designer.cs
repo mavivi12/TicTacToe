@@ -190,6 +190,8 @@ namespace TicTacToe
             // 
             this.fileToolStrip.DropDown = this.fileContextMenuStrip;
             this.fileToolStrip.Name = "fileToolStrip";
+            this.fileToolStrip.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.F)));
+            this.fileToolStrip.ShowShortcutKeys = false;
             this.fileToolStrip.Size = new System.Drawing.Size(37, 20);
             this.fileToolStrip.Text = "&File";
             // 
@@ -199,47 +201,62 @@ namespace TicTacToe
             this.newGameToolStrip,
             this.toolStripSeparator1,
             this.exitToolStrip});
-            this.fileContextMenuStrip.Name = "contextMenuStrip2";
+            this.fileContextMenuStrip.Name = "filecontextMenuStrip";
             this.fileContextMenuStrip.OwnerItem = this.fileToolStrip;
-            this.fileContextMenuStrip.Size = new System.Drawing.Size(176, 54);
+            this.fileContextMenuStrip.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
+            this.fileContextMenuStrip.ShowImageMargin = false;
+            this.fileContextMenuStrip.Size = new System.Drawing.Size(101, 54);
+            this.fileContextMenuStrip.TabStop = true;
             // 
             // newGameToolStrip
             // 
             this.newGameToolStrip.DropDown = this.NewGameContextMenuStrip;
             this.newGameToolStrip.Name = "newGameToolStrip";
             this.newGameToolStrip.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
-            this.newGameToolStrip.Size = new System.Drawing.Size(175, 22);
+            this.newGameToolStrip.ShowShortcutKeys = false;
+            this.newGameToolStrip.Size = new System.Drawing.Size(100, 22);
             this.newGameToolStrip.Text = "&New Game";
             // 
             // NewGameContextMenuStrip
             // 
             this.NewGameContextMenuStrip.Name = "NewGameContextMenuStrip";
-            this.NewGameContextMenuStrip.Size = new System.Drawing.Size(61, 4);
+            this.NewGameContextMenuStrip.OwnerItem = this.newGameToolStrip;
+            this.NewGameContextMenuStrip.ShowImageMargin = false;
+            this.NewGameContextMenuStrip.Size = new System.Drawing.Size(36, 4);
+            this.NewGameContextMenuStrip.TabStop = true;
+            this.NewGameContextMenuStrip.Text = "&New Game";
             this.NewGameContextMenuStrip.Opening += new System.ComponentModel.CancelEventHandler(this.NewGameContextMenuStrip_Opening);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(172, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(97, 6);
             // 
             // exitToolStrip
             // 
             this.exitToolStrip.DropDown = this.ExitContextMenuStrip;
             this.exitToolStrip.Name = "exitToolStrip";
-            this.exitToolStrip.Size = new System.Drawing.Size(175, 22);
+            this.exitToolStrip.ShowShortcutKeys = false;
+            this.exitToolStrip.Size = new System.Drawing.Size(100, 22);
             this.exitToolStrip.Text = "&Exit";
             // 
             // ExitContextMenuStrip
             // 
             this.ExitContextMenuStrip.Name = "ExitContextMenuStrip";
             this.ExitContextMenuStrip.OwnerItem = this.exitToolStrip;
-            this.ExitContextMenuStrip.Size = new System.Drawing.Size(61, 4);
+            this.ExitContextMenuStrip.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
+            this.ExitContextMenuStrip.ShowImageMargin = false;
+            this.ExitContextMenuStrip.Size = new System.Drawing.Size(36, 4);
+            this.ExitContextMenuStrip.TabStop = true;
+            this.ExitContextMenuStrip.Text = "&Exit";
             this.ExitContextMenuStrip.Opening += new System.ComponentModel.CancelEventHandler(this.ExitContextMenuStrip_Opening);
             // 
             // helpToolStrip
             // 
             this.helpToolStrip.DropDown = this.helpContextMenuStrip;
             this.helpToolStrip.Name = "helpToolStrip";
+            this.helpToolStrip.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
+            this.helpToolStrip.ShowShortcutKeys = false;
             this.helpToolStrip.Size = new System.Drawing.Size(44, 20);
             this.helpToolStrip.Text = "&Help";
             // 
@@ -249,21 +266,30 @@ namespace TicTacToe
             this.aboutToolStrip});
             this.helpContextMenuStrip.Name = "helpMenuStrip";
             this.helpContextMenuStrip.OwnerItem = this.helpToolStrip;
-            this.helpContextMenuStrip.Size = new System.Drawing.Size(150, 26);
+            this.helpContextMenuStrip.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
+            this.helpContextMenuStrip.ShowImageMargin = false;
+            this.helpContextMenuStrip.Size = new System.Drawing.Size(76, 26);
+            this.helpContextMenuStrip.TabStop = true;
+            this.helpContextMenuStrip.Text = "&Help";
             // 
             // aboutToolStrip
             // 
             this.aboutToolStrip.DropDown = this.AboutContextMenuStrip;
             this.aboutToolStrip.Name = "aboutToolStrip";
             this.aboutToolStrip.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.A)));
-            this.aboutToolStrip.Size = new System.Drawing.Size(149, 22);
+            this.aboutToolStrip.ShowShortcutKeys = false;
+            this.aboutToolStrip.Size = new System.Drawing.Size(75, 22);
             this.aboutToolStrip.Text = "&About";
             // 
             // AboutContextMenuStrip
             // 
             this.AboutContextMenuStrip.Name = "contextMenuStrip1";
             this.AboutContextMenuStrip.OwnerItem = this.aboutToolStrip;
-            this.AboutContextMenuStrip.Size = new System.Drawing.Size(61, 4);
+            this.AboutContextMenuStrip.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
+            this.AboutContextMenuStrip.ShowImageMargin = false;
+            this.AboutContextMenuStrip.Size = new System.Drawing.Size(36, 4);
+            this.AboutContextMenuStrip.TabStop = true;
+            this.AboutContextMenuStrip.Text = "&About";
             this.AboutContextMenuStrip.Opening += new System.ComponentModel.CancelEventHandler(this.AboutContextMenuStrip_Opening);
             // 
             // Form1
@@ -301,8 +327,8 @@ namespace TicTacToe
         #endregion
 
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button6;
