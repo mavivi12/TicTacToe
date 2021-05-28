@@ -29,6 +29,7 @@ namespace TicTacToe
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -39,15 +40,18 @@ namespace TicTacToe
             this.button7 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
-            this.RestartBtn = new System.Windows.Forms.Button();
-            this.menuStrip = new System.Windows.Forms.MenuStrip();
-            this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.newGameToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator = new System.Windows.Forms.ToolStripSeparator();
-            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuStrip.SuspendLayout();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.fileToolStrip = new System.Windows.Forms.ToolStripMenuItem();
+            this.fileContextMenuStrip = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.newGameToolStrip = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.exitToolStrip = new System.Windows.Forms.ToolStripMenuItem();
+            this.helpToolStrip = new System.Windows.Forms.ToolStripMenuItem();
+            this.helpContextMenuStrip = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.aboutToolStrip = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuStrip1.SuspendLayout();
+            this.fileContextMenuStrip.SuspendLayout();
+            this.helpContextMenuStrip.SuspendLayout();
             this.SuspendLayout();
             // 
             // button1
@@ -167,86 +171,83 @@ namespace TicTacToe
             this.button9.UseVisualStyleBackColor = true;
             this.button9.Click += new System.EventHandler(this.Button9_Click);
             // 
-            // RestartBtn
+            // menuStrip1
             // 
-            this.RestartBtn.BackColor = System.Drawing.Color.Goldenrod;
-            this.RestartBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.RestartBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.RestartBtn.Location = new System.Drawing.Point(100, 283);
-            this.RestartBtn.Name = "RestartBtn";
-            this.RestartBtn.Size = new System.Drawing.Size(101, 39);
-            this.RestartBtn.TabIndex = 8;
-            this.RestartBtn.Text = "Restart";
-            this.RestartBtn.UseCompatibleTextRendering = true;
-            this.RestartBtn.UseVisualStyleBackColor = false;
-            this.RestartBtn.Click += new System.EventHandler(this.RestartBtn_Click);
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.fileToolStrip,
+            this.helpToolStrip});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
+            this.menuStrip1.Size = new System.Drawing.Size(297, 24);
+            this.menuStrip1.TabIndex = 11;
+            this.menuStrip1.Text = "menuStrip1";
             // 
-            // menuStrip
+            // fileToolStrip
             // 
-            this.menuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.fileToolStripMenuItem,
-            this.helpToolStripMenuItem});
-            this.menuStrip.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip.Name = "menuStrip";
-            this.menuStrip.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
-            this.menuStrip.Size = new System.Drawing.Size(297, 24);
-            this.menuStrip.TabIndex = 9;
-            this.menuStrip.Text = "menuStrip";
-            this.menuStrip.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.MenuStrip_ItemClicked);
+            this.fileToolStrip.DropDown = this.fileContextMenuStrip;
+            this.fileToolStrip.Name = "fileToolStrip";
+            this.fileToolStrip.Size = new System.Drawing.Size(37, 20);
+            this.fileToolStrip.Text = "&File";
             // 
-            // fileToolStripMenuItem
+            // fileContextMenuStrip
             // 
-            this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.newGameToolStripMenuItem,
-            this.toolStripSeparator,
-            this.exitToolStripMenuItem});
-            this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
-            this.fileToolStripMenuItem.Text = "&File";
+            this.fileContextMenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.newGameToolStrip,
+            this.toolStripSeparator1,
+            this.exitToolStrip});
+            this.fileContextMenuStrip.Name = "contextMenuStrip2";
+            this.fileContextMenuStrip.OwnerItem = this.fileToolStrip;
+            this.fileContextMenuStrip.Size = new System.Drawing.Size(176, 54);
+            this.fileContextMenuStrip.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.FileContextMenuStrip_ItemClicked);
             // 
-            // newGameToolStripMenuItem
+            // newGameToolStrip
             // 
-            this.newGameToolStripMenuItem.BackColor = System.Drawing.Color.White;
-            this.newGameToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("newGameToolStripMenuItem.Image")));
-            this.newGameToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.newGameToolStripMenuItem.Name = "newGameToolStripMenuItem";
-            this.newGameToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
-            this.newGameToolStripMenuItem.Size = new System.Drawing.Size(175, 22);
-            this.newGameToolStripMenuItem.Text = "&New Game";
+            this.newGameToolStrip.Name = "newGameToolStrip";
+            this.newGameToolStrip.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
+            this.newGameToolStrip.Size = new System.Drawing.Size(175, 22);
+            this.newGameToolStrip.Text = "&New Game";
             // 
-            // toolStripSeparator
+            // toolStripSeparator1
             // 
-            this.toolStripSeparator.Name = "toolStripSeparator";
-            this.toolStripSeparator.Size = new System.Drawing.Size(172, 6);
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(172, 6);
             // 
-            // exitToolStripMenuItem
+            // exitToolStrip
             // 
-            this.exitToolStripMenuItem.BackColor = System.Drawing.Color.White;
-            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(175, 22);
-            this.exitToolStripMenuItem.Text = "E&xit";
+            this.exitToolStrip.Name = "exitToolStrip";
+            this.exitToolStrip.Size = new System.Drawing.Size(175, 22);
+            this.exitToolStrip.Text = "&Exit";
             // 
-            // helpToolStripMenuItem
+            // helpToolStrip
             // 
-            this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.aboutToolStripMenuItem});
-            this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
-            this.helpToolStripMenuItem.Text = "&Help";
+            this.helpToolStrip.DropDown = this.helpContextMenuStrip;
+            this.helpToolStrip.Name = "helpToolStrip";
+            this.helpToolStrip.Size = new System.Drawing.Size(44, 20);
+            this.helpToolStrip.Text = "&Help";
             // 
-            // aboutToolStripMenuItem
+            // helpContextMenuStrip
             // 
-            this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(116, 22);
-            this.aboutToolStripMenuItem.Text = "&About...";
+            this.helpContextMenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.aboutToolStrip});
+            this.helpContextMenuStrip.Name = "helpMenuStrip";
+            this.helpContextMenuStrip.Size = new System.Drawing.Size(150, 26);
+            this.helpContextMenuStrip.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.HelpMenuStrip_ItemClicked);
+            // 
+            // aboutToolStrip
+            // 
+            this.aboutToolStrip.Name = "aboutToolStrip";
+            this.aboutToolStrip.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.A)));
+            this.aboutToolStrip.Size = new System.Drawing.Size(149, 22);
+            this.aboutToolStrip.Text = "&About";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Tan;
-            this.ClientSize = new System.Drawing.Size(297, 348);
-            this.Controls.Add(this.RestartBtn);
+            this.ClientSize = new System.Drawing.Size(297, 304);
+            this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.button9);
             this.Controls.Add(this.button8);
             this.Controls.Add(this.button7);
@@ -256,16 +257,17 @@ namespace TicTacToe
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.menuStrip);
             this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MainMenuStrip = this.menuStrip;
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "Tic-Tac-Toe";
-            this.menuStrip.ResumeLayout(false);
-            this.menuStrip.PerformLayout();
+            this.Load += new System.EventHandler(this.Form1_Load);
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
+            this.fileContextMenuStrip.ResumeLayout(false);
+            this.helpContextMenuStrip.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -282,14 +284,15 @@ namespace TicTacToe
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Button RestartBtn;
-        private System.Windows.Forms.MenuStrip menuStrip;
-        private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem newGameToolStripMenuItem;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator;
-        private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem fileToolStrip;
+        private System.Windows.Forms.ToolStripMenuItem helpToolStrip;
+        private System.Windows.Forms.ContextMenuStrip fileContextMenuStrip;
+        private System.Windows.Forms.ToolStripMenuItem newGameToolStrip;
+        private System.Windows.Forms.ToolStripMenuItem exitToolStrip;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
+        private System.Windows.Forms.ContextMenuStrip helpContextMenuStrip;
+        private System.Windows.Forms.ToolStripMenuItem aboutToolStrip;
     }
 }
 
