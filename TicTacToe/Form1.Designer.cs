@@ -44,14 +44,14 @@ namespace TicTacToe
             this.fileToolStrip = new System.Windows.Forms.ToolStripMenuItem();
             this.fileContextMenuStrip = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.newGameToolStrip = new System.Windows.Forms.ToolStripMenuItem();
+            this.NewGameContextMenuStrip = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.exitToolStrip = new System.Windows.Forms.ToolStripMenuItem();
+            this.ExitContextMenuStrip = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.helpToolStrip = new System.Windows.Forms.ToolStripMenuItem();
             this.helpContextMenuStrip = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.aboutToolStrip = new System.Windows.Forms.ToolStripMenuItem();
             this.AboutContextMenuStrip = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.NewGameContextMenuStrip = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.ExitContextMenuStrip = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.menuStrip1.SuspendLayout();
             this.fileContextMenuStrip.SuspendLayout();
             this.helpContextMenuStrip.SuspendLayout();
@@ -61,92 +61,92 @@ namespace TicTacToe
             // 
             this.button1.BackColor = System.Drawing.Color.PeachPuff;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 45F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button1.Font = new System.Drawing.Font("Segoe UI", 45F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.button1.Location = new System.Drawing.Point(49, 64);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(62, 62);
             this.button1.TabIndex = 0;
             this.button1.UseCompatibleTextRendering = true;
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.Button1_Click);
+            this.button1.Click += new System.EventHandler(this.Button_Click);
             // 
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.PeachPuff;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 45F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button2.Font = new System.Drawing.Font("Segoe UI", 45F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.button2.Location = new System.Drawing.Point(117, 64);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(62, 62);
             this.button2.TabIndex = 1;
             this.button2.UseCompatibleTextRendering = true;
             this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.Button2_Click);
+            this.button2.Click += new System.EventHandler(this.Button_Click);
             // 
             // button3
             // 
             this.button3.BackColor = System.Drawing.Color.PeachPuff;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 45F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button3.Font = new System.Drawing.Font("Segoe UI", 45F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.button3.Location = new System.Drawing.Point(185, 64);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(62, 62);
             this.button3.TabIndex = 1;
             this.button3.UseCompatibleTextRendering = true;
             this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.Button3_Click);
+            this.button3.Click += new System.EventHandler(this.Button_Click);
             // 
             // button4
             // 
             this.button4.BackColor = System.Drawing.Color.PeachPuff;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 45F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button4.Font = new System.Drawing.Font("Segoe UI", 45F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.button4.Location = new System.Drawing.Point(49, 132);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(62, 62);
             this.button4.TabIndex = 2;
             this.button4.UseCompatibleTextRendering = true;
             this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.Button4_Click);
+            this.button4.Click += new System.EventHandler(this.Button_Click);
             // 
             // button5
             // 
             this.button5.BackColor = System.Drawing.Color.PeachPuff;
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 45F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button5.Font = new System.Drawing.Font("Segoe UI", 45F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.button5.Location = new System.Drawing.Point(117, 132);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(62, 62);
             this.button5.TabIndex = 3;
             this.button5.UseCompatibleTextRendering = true;
             this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.Button5_Click);
+            this.button5.Click += new System.EventHandler(this.Button_Click);
             // 
             // button6
             // 
             this.button6.BackColor = System.Drawing.Color.PeachPuff;
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 45F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button6.Font = new System.Drawing.Font("Segoe UI", 45F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.button6.Location = new System.Drawing.Point(185, 132);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(62, 62);
             this.button6.TabIndex = 4;
             this.button6.UseCompatibleTextRendering = true;
             this.button6.UseVisualStyleBackColor = true;
-            this.button6.Click += new System.EventHandler(this.Button6_Click);
+            this.button6.Click += new System.EventHandler(this.Button_Click);
             // 
             // button7
             // 
             this.button7.BackColor = System.Drawing.Color.PeachPuff;
             this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 45F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button7.Font = new System.Drawing.Font("Segoe UI", 45F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.button7.Location = new System.Drawing.Point(49, 200);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(62, 62);
             this.button7.TabIndex = 5;
             this.button7.UseCompatibleTextRendering = true;
             this.button7.UseVisualStyleBackColor = true;
-            this.button7.Click += new System.EventHandler(this.Button7_Click);
+            this.button7.Click += new System.EventHandler(this.Button_Click);
             // 
             // button8
             // 
@@ -159,20 +159,20 @@ namespace TicTacToe
             this.button8.TabIndex = 6;
             this.button8.UseCompatibleTextRendering = true;
             this.button8.UseVisualStyleBackColor = true;
-            this.button8.Click += new System.EventHandler(this.Button8_Click);
+            this.button8.Click += new System.EventHandler(this.Button_Click);
             // 
             // button9
             // 
             this.button9.BackColor = System.Drawing.Color.PeachPuff;
             this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button9.Font = new System.Drawing.Font("Microsoft Sans Serif", 45F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button9.Font = new System.Drawing.Font("Segoe UI", 45F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.button9.Location = new System.Drawing.Point(185, 200);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(62, 62);
             this.button9.TabIndex = 7;
             this.button9.UseCompatibleTextRendering = true;
             this.button9.UseVisualStyleBackColor = true;
-            this.button9.Click += new System.EventHandler(this.Button9_Click);
+            this.button9.Click += new System.EventHandler(this.Button_Click);
             // 
             // menuStrip1
             // 
@@ -202,14 +202,22 @@ namespace TicTacToe
             this.fileContextMenuStrip.Name = "contextMenuStrip2";
             this.fileContextMenuStrip.OwnerItem = this.fileToolStrip;
             this.fileContextMenuStrip.Size = new System.Drawing.Size(176, 54);
-            this.fileContextMenuStrip.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.FileContextMenuStrip_ItemClicked);
+            this.fileContextMenuStrip.Click += new System.EventHandler(this.FileContextMenuStrip_Click);
             // 
             // newGameToolStrip
             // 
+            this.newGameToolStrip.DropDown = this.NewGameContextMenuStrip;
             this.newGameToolStrip.Name = "newGameToolStrip";
             this.newGameToolStrip.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
             this.newGameToolStrip.Size = new System.Drawing.Size(175, 22);
             this.newGameToolStrip.Text = "&New Game";
+            // 
+            // NewGameContextMenuStrip
+            // 
+            this.NewGameContextMenuStrip.Name = "NewGameContextMenuStrip";
+            this.NewGameContextMenuStrip.OwnerItem = this.newGameToolStrip;
+            this.NewGameContextMenuStrip.Size = new System.Drawing.Size(61, 4);
+            this.NewGameContextMenuStrip.Opening += new System.ComponentModel.CancelEventHandler(this.NewGameContextMenuStrip_Opening);
             // 
             // toolStripSeparator1
             // 
@@ -218,9 +226,17 @@ namespace TicTacToe
             // 
             // exitToolStrip
             // 
+            this.exitToolStrip.DropDown = this.ExitContextMenuStrip;
             this.exitToolStrip.Name = "exitToolStrip";
             this.exitToolStrip.Size = new System.Drawing.Size(175, 22);
             this.exitToolStrip.Text = "&Exit";
+            // 
+            // ExitContextMenuStrip
+            // 
+            this.ExitContextMenuStrip.Name = "ExitContextMenuStrip";
+            this.ExitContextMenuStrip.OwnerItem = this.exitToolStrip;
+            this.ExitContextMenuStrip.Size = new System.Drawing.Size(61, 4);
+            this.ExitContextMenuStrip.Opening += new System.ComponentModel.CancelEventHandler(this.ExitContextMenuStrip_Opening);
             // 
             // helpToolStrip
             // 
@@ -236,7 +252,7 @@ namespace TicTacToe
             this.helpContextMenuStrip.Name = "helpMenuStrip";
             this.helpContextMenuStrip.OwnerItem = this.helpToolStrip;
             this.helpContextMenuStrip.Size = new System.Drawing.Size(150, 26);
-            this.helpContextMenuStrip.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.HelpMenuStrip_ItemClicked);
+            this.helpContextMenuStrip.Click += new System.EventHandler(this.HelpContextMenuStrip_Click);
             // 
             // aboutToolStrip
             // 
@@ -249,18 +265,9 @@ namespace TicTacToe
             // AboutContextMenuStrip
             // 
             this.AboutContextMenuStrip.Name = "contextMenuStrip1";
+            this.AboutContextMenuStrip.OwnerItem = this.aboutToolStrip;
             this.AboutContextMenuStrip.Size = new System.Drawing.Size(61, 4);
             this.AboutContextMenuStrip.Opening += new System.ComponentModel.CancelEventHandler(this.AboutContextMenuStrip_Opening);
-            // 
-            // NewGameContextMenuStrip
-            // 
-            this.NewGameContextMenuStrip.Name = "NewGameContextMenuStrip";
-            this.NewGameContextMenuStrip.Size = new System.Drawing.Size(61, 4);
-            // 
-            // ExitContextMenuStrip
-            // 
-            this.ExitContextMenuStrip.Name = "ExitContextMenuStrip";
-            this.ExitContextMenuStrip.Size = new System.Drawing.Size(61, 4);
             // 
             // Form1
             // 
@@ -283,8 +290,8 @@ namespace TicTacToe
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Tic-Tac-Toe";
-            this.Load += new System.EventHandler(this.Form1_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.fileContextMenuStrip.ResumeLayout(false);
