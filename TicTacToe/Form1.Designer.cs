@@ -49,6 +49,9 @@ namespace TicTacToe
             this.helpToolStrip = new System.Windows.Forms.ToolStripMenuItem();
             this.helpContextMenuStrip = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.aboutToolStrip = new System.Windows.Forms.ToolStripMenuItem();
+            this.AboutContextMenuStrip = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.NewGameContextMenuStrip = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.ExitContextMenuStrip = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.menuStrip1.SuspendLayout();
             this.fileContextMenuStrip.SuspendLayout();
             this.helpContextMenuStrip.SuspendLayout();
@@ -231,15 +234,33 @@ namespace TicTacToe
             this.helpContextMenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.aboutToolStrip});
             this.helpContextMenuStrip.Name = "helpMenuStrip";
+            this.helpContextMenuStrip.OwnerItem = this.helpToolStrip;
             this.helpContextMenuStrip.Size = new System.Drawing.Size(150, 26);
             this.helpContextMenuStrip.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.HelpMenuStrip_ItemClicked);
             // 
             // aboutToolStrip
             // 
+            this.aboutToolStrip.DropDown = this.AboutContextMenuStrip;
             this.aboutToolStrip.Name = "aboutToolStrip";
             this.aboutToolStrip.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.A)));
             this.aboutToolStrip.Size = new System.Drawing.Size(149, 22);
             this.aboutToolStrip.Text = "&About";
+            // 
+            // AboutContextMenuStrip
+            // 
+            this.AboutContextMenuStrip.Name = "contextMenuStrip1";
+            this.AboutContextMenuStrip.Size = new System.Drawing.Size(61, 4);
+            this.AboutContextMenuStrip.Opening += new System.ComponentModel.CancelEventHandler(this.AboutContextMenuStrip_Opening);
+            // 
+            // NewGameContextMenuStrip
+            // 
+            this.NewGameContextMenuStrip.Name = "NewGameContextMenuStrip";
+            this.NewGameContextMenuStrip.Size = new System.Drawing.Size(61, 4);
+            // 
+            // ExitContextMenuStrip
+            // 
+            this.ExitContextMenuStrip.Name = "ExitContextMenuStrip";
+            this.ExitContextMenuStrip.Size = new System.Drawing.Size(61, 4);
             // 
             // Form1
             // 
@@ -293,6 +314,9 @@ namespace TicTacToe
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.ContextMenuStrip helpContextMenuStrip;
         private System.Windows.Forms.ToolStripMenuItem aboutToolStrip;
+        private System.Windows.Forms.ContextMenuStrip AboutContextMenuStrip;
+        private System.Windows.Forms.ContextMenuStrip NewGameContextMenuStrip;
+        private System.Windows.Forms.ContextMenuStrip ExitContextMenuStrip;
     }
 }
 

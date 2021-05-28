@@ -87,19 +87,14 @@ namespace TicTacToe
 
         }
 
-        private void NewGameToolStrip_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        private void AboutContextMenuStrip_Click(object sender, EventArgs e)
         {
-
-        }
-        private void ExitToolStrip_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
-        {
-
+            MessageBox.Show("Developed by Marvic Macarubbo (2021)", "Tic-Tac-Toe About");
         }
 
-        private void AboutToolStrip_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        private void AboutContextMenuStrip_Opening(object sender, CancelEventArgs e)
         {
-
+            MessageBox.Show("Developed by Marvic Macarubbo (2021).\nI hope you enjoy the Tic-Tac-Toe Game!", "Tic-Tac-Toe About");
         }
-
     }
 }
