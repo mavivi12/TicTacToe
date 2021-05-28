@@ -202,7 +202,6 @@ namespace TicTacToe
             this.fileContextMenuStrip.Name = "contextMenuStrip2";
             this.fileContextMenuStrip.OwnerItem = this.fileToolStrip;
             this.fileContextMenuStrip.Size = new System.Drawing.Size(176, 54);
-            this.fileContextMenuStrip.Click += new System.EventHandler(this.FileContextMenuStrip_Click);
             // 
             // newGameToolStrip
             // 
@@ -251,7 +250,6 @@ namespace TicTacToe
             this.helpContextMenuStrip.Name = "helpMenuStrip";
             this.helpContextMenuStrip.OwnerItem = this.helpToolStrip;
             this.helpContextMenuStrip.Size = new System.Drawing.Size(150, 26);
-            this.helpContextMenuStrip.Click += new System.EventHandler(this.HelpContextMenuStrip_Click);
             // 
             // aboutToolStrip
             // 
