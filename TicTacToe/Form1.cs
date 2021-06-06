@@ -98,7 +98,7 @@ namespace TicTacToe
 
         private void ExitContextMenuStrip_Opening(object sender, CancelEventArgs e)
         {
-            Application.Exit();
+            this.Close();
         }
     }
 }
