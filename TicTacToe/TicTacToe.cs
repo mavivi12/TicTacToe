@@ -49,15 +49,15 @@ namespace TicTacToe
             //Checking vertically
             else if ((button1.Text == button4.Text) && (button4.Text == button7.Text) && (!button1.Enabled))
                 MayNanaloNaBa = true;
-            else if((button2.Text == button5.Text) && (button5.Text == button8.Text) && (!button2.Enabled))
+            else if ((button2.Text == button5.Text) && (button5.Text == button8.Text) && (!button2.Enabled))
                 MayNanaloNaBa = true;
-            else if((button3.Text == button6.Text) && (button6.Text == button9.Text) && (!button3.Enabled))
+            else if ((button3.Text == button6.Text) && (button6.Text == button9.Text) && (!button3.Enabled))
                 MayNanaloNaBa = true;
 
             //Checking Diagonally
-            else if((button1.Text == button5.Text) && (button5.Text == button9.Text) && (!button1.Enabled))
+            else if ((button1.Text == button5.Text) && (button5.Text == button9.Text) && (!button1.Enabled))
                 MayNanaloNaBa = true;
-            else if((button3.Text == button5.Text) && (button5.Text == button7.Text) && (!button3.Enabled))
+            else if ((button3.Text == button5.Text) && (button5.Text == button7.Text) && (!button3.Enabled))
                 MayNanaloNaBa = true;
 
             if (MayNanaloNaBa)
@@ -81,10 +81,10 @@ namespace TicTacToe
                 button9.Enabled = false;
             }
             else if (playerturn_count == 9)
-                {
-                    MessageBox.Show("Draw!", "No Winner!");
-                }
-        }//may nanalo na
+            {
+                MessageBox.Show("Draw!", "No Winner!");
+            }
+        }
 
         private void NewGameContextMenuStrip_Opening(object sender, CancelEventArgs e)
         {
