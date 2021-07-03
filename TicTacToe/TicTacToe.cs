@@ -12,7 +12,7 @@ namespace TicTacToe
 {
     public partial class Form1 : Form
     {
-        bool playerturn = true; //true = 1st player turns; false = 2nd player turns
+        bool playerturn = true; 
         int playerturn_count = 0;
         bool MayNanaloNaBa = false;
 
@@ -29,9 +29,9 @@ namespace TicTacToe
             else
                 b.Text = "O";
 
-            playerturn = !playerturn; //change player
-            b.Enabled = false; //one click only per button
-            playerturn_count++; //incrementation
+            playerturn = !playerturn;
+            b.Enabled = false; 
+            playerturn_count++;
 
             WinnerChecker();
         }
